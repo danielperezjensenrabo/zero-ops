@@ -1,0 +1,355 @@
+{
+  "nodes": [
+    {
+      "id": "GPS",
+      "label": "GPS",
+      "type": "organisation"
+    },
+    {
+      "id": "ROM",
+      "label": "ROM",
+      "type": "organisation"
+    },
+    {
+      "id": "Equens",
+      "label": "Equens",
+      "type": "outside"
+    },
+    {
+      "id": "Riskshield",
+      "label": "Riskshield",
+      "type": "outside"
+    },
+    {
+      "id": "HSM",
+      "label": "HSM",
+      "type": "security"
+    },
+    {
+      "id": "ICEXS1",
+      "label": "ICEXS1",
+      "type": "router"
+    },
+    {
+      "id": "ICEXS2",
+      "label": "ICEXS2",
+      "type": "router"
+    },
+    {
+      "id": "ICEXS3",
+      "label": "ICEXS3",
+      "type": "router"
+    },
+    {
+      "id": "ICEXS4",
+      "label": "ICEXS4",
+      "type": "router"
+    },
+    {
+      "id": "ICEXS5",
+      "label": "ICEXS5",
+      "type": "router"
+    },
+    {
+      "id": "ICEXS6",
+      "label": "ICEXS6",
+      "type": "router"
+    },
+    {
+      "id": "ICEXS7",
+      "label": "ICEXS7",
+      "type": "router"
+    },
+    {
+      "id": "ICEXS8",
+      "label": "ICEXS8",
+      "type": "router"
+    },
+    {
+      "id": "Switch1",
+      "label": "Switch1",
+      "type": "switch"
+    },
+    {
+      "id": "Switch2",
+      "label": "Switch2",
+      "type": "switch"
+    },
+    {
+      "id": "Switch3",
+      "label": "Switch3",
+      "type": "switch"
+    },
+    {
+      "id": "Switch4",
+      "label": "Switch4",
+      "type": "switch"
+    },
+    {
+      "id": "DB1",
+      "label": "DB1",
+      "type": "database"
+    },
+    {
+      "id": "DB2",
+      "label": "DB2",
+      "type": "database"
+    }
+  ],
+  "links": [
+    {
+      "source": "GPS",
+      "target": "HSM",
+      "connection": "egress"
+    },
+    {
+      "source": "ROM",
+      "target": "HSM",
+      "connection": "egress"
+    },
+    {
+      "source": "Equens",
+      "target": "HSM",
+      "connection": "egress"
+    },
+    {
+      "source": "Riskshield",
+      "target": "HSM",
+      "connection": "egress"
+    },
+    {
+      "source": "HSM",
+      "target": "ICEXS1",
+      "connection": "ingress"
+    },
+    {
+      "source": "HSM",
+      "target": "ICEXS2",
+      "connection": "ingress"
+    },
+    {
+      "source": "HSM",
+      "target": "ICEXS3",
+      "connection": "ingress"
+    },
+    {
+      "source": "HSM",
+      "target": "ICEXS4",
+      "connection": "ingress"
+    },
+    {
+      "source": "HSM",
+      "target": "ICEXS5",
+      "connection": "ingress"
+    },
+    {
+      "source": "HSM",
+      "target": "ICEXS6",
+      "connection": "ingress"
+    },
+    {
+      "source": "HSM",
+      "target": "ICEXS7",
+      "connection": "ingress"
+    },
+    {
+      "source": "HSM",
+      "target": "ICEXS8",
+      "connection": "ingress"
+    },
+    {
+      "source": "ICEXS1",
+      "target": "Switch1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS1",
+      "target": "Switch2",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS1",
+      "target": "Switch3",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS1",
+      "target": "Switch4",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS2",
+      "target": "Switch1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS2",
+      "target": "Switch2",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS2",
+      "target": "Switch3",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS2",
+      "target": "Switch4",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS3",
+      "target": "Switch1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS3",
+      "target": "Switch2",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS3",
+      "target": "Switch3",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS3",
+      "target": "Switch4",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS4",
+      "target": "Switch1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS4",
+      "target": "Switch2",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS4",
+      "target": "Switch3",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS4",
+      "target": "Switch4",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS5",
+      "target": "Switch1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS5",
+      "target": "Switch2",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS5",
+      "target": "Switch3",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS5",
+      "target": "Switch4",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS6",
+      "target": "Switch1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS6",
+      "target": "Switch2",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS6",
+      "target": "Switch3",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS6",
+      "target": "Switch4",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS7",
+      "target": "Switch1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS7",
+      "target": "Switch2",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS7",
+      "target": "Switch3",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS7",
+      "target": "Switch4",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS8",
+      "target": "Switch1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS8",
+      "target": "Switch2",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS8",
+      "target": "Switch3",
+      "connection": "endpoint"
+    },
+    {
+      "source": "ICEXS8",
+      "target": "Switch4",
+      "connection": "endpoint"
+    },
+    {
+      "source": "Switch1",
+      "target": "DB1",
+      "connection": "endpoint"
+    },
+    {
+      "source": "Switch2",
+      "target": "DB1",
+      "connection": "endpoint"
+    },
+    { "source": "Switch3",
+      "target": "DB1",
+      "connection": "endpoint"
+    },
+    { "source": "Switch4",
+      "target": "DB1",
+      "connection": "endpoint"
+    },
+    { "source": "Switch1",
+      "target": "DB2",
+      "connection": "endpoint"
+    },
+    { "source": "Switch2",
+      "target": "DB2",
+      "connection": "endpoint"
+    },
+    { "source": "Switch3",
+      "target": "DB2",
+      "connection": "endpoint"
+    },
+    { "source": "Switch4",
+      "target": "DB2",
+      "connection": "endpoint"
+    }
+  ]
+}
